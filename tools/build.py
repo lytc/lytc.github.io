@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build a plain static portfolio. Standard library only."""
 import html
+import hashlib
 import json
 from pathlib import Path
 
@@ -8,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORK = json.loads((ROOT / 'content/work.json').read_text())
 EVIDENCE = json.loads((ROOT / 'data/evidence.json').read_text())
 ACTIVITY = json.loads((ROOT / 'data/activity.json').read_text())
+CSS_VERSION = hashlib.sha256((ROOT / 'assets/site.css').read_bytes()).hexdigest()[:12]
 e = html.escape
 
 
@@ -19,7 +21,7 @@ def page(title, description, body, path='/'):
 <link rel="canonical" href="https://lytc.github.io{path}">
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website"><meta property="og:url" content="https://lytc.github.io{path}">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/site.css?v={CSS_VERSION}">
 </head><body><a class="skip-link" href="#main">Skip to content</a>
 <header><a class="name" href="/">Ly Tran</a><nav aria-label="Main navigation"><a href="/#work">Work</a><a href="/#stack">Stack</a><a href="/activity.html">Numbers</a><a href="/working-together.html">Fit</a><a href="#contact">Contact</a></nav></header>
 {body}
