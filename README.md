@@ -1,23 +1,25 @@
-# Ly Tran — Engineering, in practice
+# Ly Tran — Portfolio
 
-Personal portfolio at **https://lytc.github.io**, published from `lytc/lytc.github.io`. This is the personal `lytc` account. The Git history is preserved from the historical `lytc.github.com` repository.
+Personal portfolio: https://lytc.github.io
 
-The site is static HTML, CSS, and a small amount of JavaScript. There are no package dependencies, tracking scripts, external fonts, or visitor API calls.
+Published from `lytc/lytc.github.io`, using the root of `master`. The Git history is preserved from the historical `lytc.github.com` repository.
 
-## Edit and build
+## Build
 
-- `content/work.json`: the seven case studies.
-- `data/evidence.json`: public product sources, chronology methods, and selected secondary contribution links.
-- `tools/build.py`: page templates, homepage content, evidence page, contact details.
-- `assets/site.css`: responsive layout and original explanatory diagrams.
-- `assets/site.js`: accessible approach tabs.
+Run `python3 tools/build.py`. Preview with `python3 -m http.server 4173 --bind 127.0.0.1`.
 
-Run `python3 tools/build.py` from the repository root to regenerate the committed HTML. Then preview with `python3 -m http.server 4173 --bind 127.0.0.1` and open `http://127.0.0.1:4173`.
+Static HTML and CSS. No JavaScript, dependencies, tracking, external fonts, or visitor API calls. `.nojekyll` keeps the static output intact.
 
-GitHub Pages serves the root of the `master` branch. `.nojekyll` keeps the static output intact. The original site remains in Git history. Other project Pages remain hosted by their own repositories.
+- `content/work.json`: seven descriptions of product and engineering work.
+- `data/evidence.json`: public sources and verification scope.
+- `data/activity.json`: aggregate activity counts, dates, and calculation methods.
+- `tools/build.py`: page generation and site copy.
+- `assets/site.css`: layout and typography.
 
-## Content boundaries
+## Content
 
-Career dates and product claims include source scope and verification dates. Private professional work is described in generalized form. No company source code, private evidence files, internal messages, or operational metrics belong in this repository. Explanatory diagrams are original illustrations, not product screenshots.
+Company work is described without publishing private source, messages, customer data, or operational figures. Public product links establish capabilities; individual attribution was checked against private records.
 
-The contact email and phone number were supplied by the owner for public display. Recent engineering work is described as AI-assisted; adoption and measured effectiveness are kept separate.
+PRs, reviews, commits, and TypeScript line changes have different scopes. They are not a productivity score. Line changes include repeated edits and AI-assisted work, not just unique hand-written code. Raw measurement artifacts stay outside this repository.
+
+The owner supplied the contact information and career preferences. The working-together page describes the environment he is seeking.

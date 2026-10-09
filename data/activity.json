@@ -1,0 +1,33 @@
+{
+  "collected": "2026-10-10",
+  "github": {
+    "scope": "My Digication account, within the Digication organization, across product, platform, and internal-tool repositories.",
+    "pull_requests_opened": 2870,
+    "pull_requests_merged": 2490,
+    "others_pull_requests_reviewed": 1024,
+    "method": "Dated GitHub search snapshot, reconciled in two research passes on October 10, 2026. Author filters count opened PRs; merged adds the merged-state filter. Reviews count distinct PRs matching the reviewer, excluding self-authored PRs. REST and GraphQL search counts agreed for the same populations.",
+    "limits": "Opened and merged PRs overlap. Reviewed PRs are distinct PRs, not review events or comments. Search reflects records visible to the authenticated account at collection. Private source records are not published. These counts include AI-assisted work."
+  },
+  "product_history": {
+    "scope": "Three local snapshots of the product repositories' default remote-tracking branches; no fresh fetch. Non-merge commits attributed to the exact Git author names lytc or Ly Tran.",
+    "unique_non_merge_commits": 7538,
+    "repositories": [
+      {"label": "Backend & services", "snapshot_tip_date": "2026-10-06", "commits": 3282},
+      {"label": "Web applications", "snapshot_tip_date": "2026-10-09", "commits": 2388},
+      {"label": "Legacy product", "snapshot_tip_date": "2026-09-14", "commits": 1868}
+    ],
+    "method": "Enumerate commits reachable from each pinned snapshot, exclude merges, and match author names exactly. Cross-check git log against git rev-list; combine commit SHA sets across repositories.",
+    "limits": "A count of commit objects in the selected history, not distinct features, production releases, or all career work. Imported history, cherry-picks, and rebases can represent similar work under different SHAs. Squashed work may appear as one commit. No ranking of colleagues or productivity inference."
+  },
+  "typescript_line_changes": {
+    "scope": "Filtered TypeScript diffs in the backend/services and web-application snapshots above, attributed to my non-merge commits. Includes implementation, tests, and configuration.",
+    "added": 356713,
+    "deleted": 182770,
+    "repositories": [
+      {"label": "Backend & services", "added": 153660, "deleted": 59219},
+      {"label": "Web applications", "added": 203053, "deleted": 123551}
+    ],
+    "method": "Sum Git numstat with rename detection for .ts, .tsx, .mts and .cts files in the selected non-merge commits. Cross-check git log against a separate git diff-tree calculation using NUL-delimited paths. Exclude declaration files, known generated GraphQL bindings/introspection, shared generated types, dependency and build folders, fixtures, examples, migration files, and the country-code dataset.",
+    "limits": "Diff line changes, not current source LOC or unique lines written by hand. Blank and comment lines count. Repeated edits, formatting, copied/imported work, and AI-assisted implementation can remain. Filtering is not a complete authorship audit. Added minus deleted is not personal ownership of the current codebase. No claim of a productivity or quality score."
+  }
+}
