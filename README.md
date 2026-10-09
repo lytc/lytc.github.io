@@ -1,6 +1,6 @@
 # Ly Tran — Engineering, in practice
 
-Personal portfolio at **https://lytc.github.io**, published from `lytc/lytc.github.com` (the historical GitHub Pages repository). This is the personal `lytc` account.
+Personal portfolio at **https://lytc.github.io**, published from `lytc/lytc.github.io`. This is the personal `lytc` account. The Git history is preserved from the historical `lytc.github.com` repository.
 
 The site is static HTML, CSS, and a small amount of JavaScript. There are no package dependencies, tracking scripts, external fonts, or visitor API calls.
 
