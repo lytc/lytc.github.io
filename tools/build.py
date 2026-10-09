@@ -49,7 +49,7 @@ def metric_rows():
 
 
 def fit_summary():
-    return '''<div class="fit-summary"><div><h3>Where I do my best work</h3><ul><li>Architecture, platforms, and developer tools.</li><li>Written communication and very few meetings.</li><li>An equal voice in decisions and shared responsibility.</li></ul></div><div><h3>I may not be the right fit if…</h3><ul><li>Meetings are central to everyday work.</li><li>Technical decisions are imposed by rank.</li><li>The role is mainly people management.</li></ul></div></div>'''
+    return '''<div class="fit-summary"><div><h3>I may not be the right fit if…</h3><ul><li>Meetings are central to everyday work.</li><li>Technical decisions are imposed by rank.</li><li>The role is mainly people management.</li></ul></div><div><h3>Where I do my best work</h3><ul><li>Architecture, platforms, and developer tools.</li><li>Written communication and very few meetings.</li><li>An equal voice in decisions and shared responsibility.</li></ul></div></div>'''
 
 
 def home():
@@ -87,8 +87,8 @@ def activity_page():
 
 def working_together_page():
     body = '''<main id="main"><div class="page-intro"><h1>Working together</h1><p class="lead">I’m looking for an engineering role focused on architecture, platforms, and better development workflows.</p><p>Based in Vietnam. Open to remote work or a role in Ho Chi Minh City. I’m not looking to relocate internationally.</p></div>
-<section><h2>Where I do my best work</h2><ul class="work-points"><li><strong>Architecture and platforms.</strong> Shared services, reusable packages, and tools that help the whole team build software.</li><li><strong>AI and automation.</strong> Practical tools for developing and reviewing software with AI.</li><li><strong>Very few meetings.</strong> I see little need for meetings to exchange information. I prefer written communication and time to focus.</li><li><strong>Equal voice and shared responsibility.</strong> Everyone should be able to question a decision and be responsible for the result.</li></ul></section>
 <section><h2>I may not be the right fit if…</h2><ul class="work-points"><li><strong>Meetings are central to everyday work.</strong> I’m looking for a nearly meeting-free way of collaborating.</li><li><strong>Technical decisions are imposed by rank.</strong> I expect different opinions to get a fair hearing and be supported by reasoning and evidence.</li><li><strong>The role is mainly people management.</strong> I want to stay on the engineering track, while contributing technical guidance and support for colleagues.</li></ul></section>
+<section><h2>Where I do my best work</h2><ul class="work-points"><li><strong>Architecture and platforms.</strong> Shared services, reusable packages, and tools that help the whole team build software.</li><li><strong>AI and automation.</strong> Practical tools for developing and reviewing software with AI.</li><li><strong>Very few meetings.</strong> I see little need for meetings to exchange information. I prefer written communication and time to focus.</li><li><strong>Equal voice and shared responsibility.</strong> Everyone should be able to question a decision and be responsible for the result.</li></ul></section>
 <section><h2>How I want the team to decide</h2><p>Seek agreement first. Explain different opinions with a convincing argument and evidence. If disagreement remains, decide by majority.</p></section>
 <section><h2>Get in touch</h2><p>Send me a short description of the role, the problem you’re working on, and how your team works.</p><p><a href="mailto:prtran@gmail.com">prtran@gmail.com</a></p></section></main>'''
     write('working-together.html', 'Working together — Ly Tran', 'The engineering role and team I am looking for.', body)
