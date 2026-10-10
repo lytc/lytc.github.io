@@ -63,5 +63,19 @@
     "typescript_backend_from": "2016-02",
     "react_frontend_from": "2016-08",
     "method": "Earliest attributable contributions in git, cross-checked through GitHub account linkage. Current title: Senior Engineer."
-  }
+  },
+  "direction_work": [
+    {
+      "name": "work-orchestrator",
+      "status": "In personal use",
+      "basis": "Private README, implementation, tests, and selected local work records; owner confirmation of use.",
+      "limits": "Benefits are personal observations. No measured time saving, productivity multiplier, or team-wide adoption is claimed."
+    },
+    {
+      "name": "Dika",
+      "status": "Planned direction; product not built",
+      "basis": "Private README, design documents, demo and application descriptions, and agent-assisted research records.",
+      "limits": "Research, design, a reference demo, and an initial scaffold exist. The core workflow is not implemented; no adoption or measured outcome is claimed."
+    }
+  ]
 }

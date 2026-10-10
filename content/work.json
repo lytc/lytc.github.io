@@ -1,5 +1,58 @@
 [
   {
+    "slug": "work-orchestrator",
+    "title": "work-orchestrator",
+    "role": "Workflow designer & builder, working with coding agents",
+    "period": "In personal use · 2026",
+    "summary": "In use: a tool I built to coordinate coding agents, keep task context, and follow work through verification.",
+    "points": [
+      "Designed the workflow and built the tool with coding agents, refining it through my own use.",
+      "Keep requests, decisions, next actions, and completion checks connected across tasks.",
+      "Coordinate parallel agent work and preserve context when work moves between sessions.",
+      "Track review follow-ups and verification, and prepare weekly summaries from the same work records."
+    ],
+    "scope": "In my own use, it helps me coordinate agents, spend less effort remembering context, and keep track of unfinished work. These are personal observations; I have not measured time savings or team-wide impact.",
+    "tags": [
+      "Coding agents",
+      "Workflow design",
+      "Developer tools"
+    ],
+    "links": [
+      {
+        "label": "Dika — the team workflow I’m exploring",
+        "url": "/work/dika.html"
+      }
+    ],
+    "evidence": "Checked against the README, implementation, tests, and selected local task records in October 2026. The records support context handoffs, review follow-ups, completion checks, and usable weekly summaries. They remain private. Personal use and benefits are my own report."
+  },
+  {
+    "slug": "dika",
+    "title": "Dika",
+    "role": "Initiator & workflow designer, working with coding agents",
+    "period": "Planned direction · 2026",
+    "summary": "Planned: a shared workflow for people and coding agents, from an agreed request to a verified result. The product is not built yet.",
+    "work_heading": "What I’m working toward",
+    "points": [
+      "Started the direction and used independent agent research, synthesis, and review to explore it.",
+      "Agree on the intended result and what counts as done before implementation starts.",
+      "Keep context, decisions, and evidence connected through implementation, review, and delivery.",
+      "Let agents carry more of the work while people make the decisions that need their judgment."
+    ],
+    "scope": "The repository contains research, design, a reference demo, and an initial application scaffold. The core workflow is not implemented. This is a direction I want to pursue, not a product already used by a team.",
+    "tags": [
+      "Product direction",
+      "Workflow design",
+      "Coding agents"
+    ],
+    "links": [
+      {
+        "label": "work-orchestrator — the tool I use today",
+        "url": "/work/work-orchestrator.html"
+      }
+    ],
+    "evidence": "Checked against the repository README, design documents, demo description, application README, and research records in October 2026. These establish the direction and its current limits, not adoption or proven results. Internal documents and code remain private."
+  },
+  {
     "slug": "ai-products",
     "role": "Full-stack contributor & shared-package builder",
     "period": "Selected work · 2024–present",
