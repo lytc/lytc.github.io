@@ -2,55 +2,64 @@
   {
     "slug": "work-orchestrator",
     "title": "work-orchestrator",
-    "role": "Workflow designer & builder, working with coding agents",
+    "role": "Built with coding agents",
     "period": "In personal use · 2026",
-    "summary": "In use: a tool I built to coordinate coding agents, keep task context, and follow work through verification.",
-    "points": [
-      "Designed the workflow and built the tool with coding agents, refining it through my own use.",
-      "Keep requests, decisions, next actions, and completion checks connected across tasks.",
-      "Coordinate parallel agent work and preserve context when work moves between sessions.",
-      "Track review follow-ups and verification, and prepare weekly summaries from the same work records."
-    ],
-    "scope": "In my own use, it helps me coordinate agents, spend less effort remembering context, and keep track of unfinished work. These are personal observations; I have not measured time savings or team-wide impact.",
-    "tags": [
-      "Coding agents",
-      "Workflow design",
-      "Developer tools"
-    ],
+    "summary": "In use: my tool for keeping track of agents, tasks, and follow-ups.",
+    "scope": "",
+    "tags": [],
     "links": [
       {
-        "label": "Dika — the team workflow I’m exploring",
+        "label": "Dika — taking the idea to a team",
         "url": "/work/dika.html"
       }
     ],
-    "evidence": "Checked against the README, implementation, tests, and selected local task records in October 2026. The records support context handoffs, review follow-ups, completion checks, and usable weekly summaries. They remain private. Personal use and benefits are my own report."
+    "evidence": "Checked against private code and work records. The benefits describe my own experience; time savings have not been measured.",
+    "story": [
+      {
+        "label": "Why I built it",
+        "text": "Work gets scattered across chats, tasks, and pull requests. I don’t want to keep it all in my head."
+      },
+      {
+        "label": "Today",
+        "text": "I use it to see what needs attention, pick up unfinished work, and follow up on reviews and checks. It helps me manage several agents without constantly rebuilding the context."
+      },
+      {
+        "label": "What I want",
+        "text": "Less chasing updates. More time solving the actual problem."
+      }
+    ],
+    "compact_evidence": true
   },
   {
     "slug": "dika",
     "title": "Dika",
-    "role": "Initiator & workflow designer, working with coding agents",
-    "period": "Planned direction · 2026",
-    "summary": "Planned: a shared workflow for people and coding agents, from an agreed request to a verified result. The product is not built yet.",
-    "work_heading": "What I’m working toward",
-    "points": [
-      "Started the direction and used independent agent research, synthesis, and review to explore it.",
-      "Agree on the intended result and what counts as done before implementation starts.",
-      "Keep context, decisions, and evidence connected through implementation, review, and delivery.",
-      "Let agents carry more of the work while people make the decisions that need their judgment."
-    ],
-    "scope": "The repository contains research, design, a reference demo, and an initial application scaffold. The core workflow is not implemented. This is a direction I want to pursue, not a product already used by a team.",
-    "tags": [
-      "Product direction",
-      "Workflow design",
-      "Coding agents"
-    ],
+    "role": "Exploring with coding agents",
+    "period": "Not built yet · 2026",
+    "summary": "An idea for helping a team get work done with coding agents. Not built yet.",
+    "scope": "",
+    "tags": [],
     "links": [
       {
-        "label": "work-orchestrator — the tool I use today",
+        "label": "work-orchestrator — what I use today",
         "url": "/work/work-orchestrator.html"
       }
     ],
-    "evidence": "Checked against the repository README, design documents, demo description, application README, and research records in October 2026. These establish the direction and its current limits, not adoption or proven results. Internal documents and code remain private."
+    "evidence": "Checked against the private design, demo, and application records. Dika is a direction I want to pursue, not a tool a team is using yet.",
+    "story": [
+      {
+        "label": "The problem",
+        "text": "Writing code is only part of the job. People still have to pass on context, chase reviews, and check that the change works."
+      },
+      {
+        "label": "Today",
+        "text": "I’ve explored the idea with coding agents through research, design, and a demo. There is some starter code, but the product isn’t built yet."
+      },
+      {
+        "label": "What I want",
+        "text": "A team can say what it needs, let agents do more of the work, and step in when a decision needs a person. Less passing work back and forth."
+      }
+    ],
+    "compact_evidence": true
   },
   {
     "slug": "ai-products",
@@ -166,6 +175,38 @@
       "Built or maintained shared AI, UI, API-client, backend-helper, and testing packages."
     ],
     "scope": "The work includes original foundations, extensions, migration, and maintenance; these packages also contain colleagues’ work."
+  },
+  {
+    "slug": "operations",
+    "title": "Operations",
+    "role": "Hands-on engineering, alongside teammates",
+    "period": "Selected work · 2023–2026",
+    "summary": "Deploying applications, monitoring them, and following up when something goes wrong.",
+    "points": [
+      "Built and maintained GitHub Actions pipelines for staging and production.",
+      "Worked on AWS infrastructure in code, including Lambda, ECS/Fargate, and deployment configuration.",
+      "Built shared monitoring code with Elastic APM and OpenTelemetry, and worked on CloudWatch alarms.",
+      "Wrote deployment guides and fixed build, deployment, and runtime issues.",
+      "Contributed security fixes and helped review incident records and follow-up actions."
+    ],
+    "scope": "This work sits alongside product development: helping get changes out and keeping track of what needs fixing afterward.",
+    "tags": [
+      "AWS",
+      "SST / CDK",
+      "Docker",
+      "GitHub Actions",
+      "CloudWatch",
+      "OpenTelemetry",
+      "Elastic APM"
+    ],
+    "links": [
+      {
+        "label": "Monorepos, serverless & legacy replacement",
+        "url": "/work/modernization.html"
+      }
+    ],
+    "evidence": "Checked against authored code changes, deployment guides, and local work records from 2023–2026. These show hands-on contributions, not sole ownership or measured uptime and cost savings. Internal details remain private.",
+    "compact_evidence": true
   },
   {
     "slug": "modernization",
