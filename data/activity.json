@@ -4,17 +4,31 @@
     "scope": "My Digication account, within the Digication organization, across product, platform, and internal-tool repositories.",
     "pull_requests_opened": 2870,
     "pull_requests_merged": 2490,
-    "others_pull_requests_reviewed": 1024,
-    "method": "Dated GitHub search snapshot, reconciled in two research passes on October 10, 2026. Author filters count opened PRs; merged adds the merged-state filter. Reviews count distinct PRs matching the reviewer, excluding self-authored PRs. REST and GraphQL search counts agreed for the same populations.",
-    "limits": "Opened and merged PRs overlap. Reviewed PRs are distinct PRs, not review events or comments. Search reflects records visible to the authenticated account at collection. Private source records are not published. These counts include AI-assisted work."
+    "others_pull_requests_reviewed": 1016,
+    "method": "Authored and merged PR search counts were checked through REST and GraphQL on October 10, 2026. For reviews, every matching PR and review connection was paginated. Count distinct PRs with at least one submitted review by my account, excluding self-authored PRs. The 1,024 search candidates included eight PRs with draft-only reviews; these are excluded, leaving 1,016 PRs with submitted reviews.",
+    "limits": "Opened and merged PRs overlap. The review figure counts distinct PRs with submitted reviews, not review events or comments. It excludes pending drafts. Counts reflect visible records at collection, include AI-assisted work, and do not measure quality. Private source records are not published.",
+    "review_search_candidates": 1024,
+    "draft_only_prs_excluded": 8
   },
   "product_history": {
     "scope": "Three local snapshots of the product repositories' default remote-tracking branches; no fresh fetch. Non-merge commits attributed to the exact Git author names lytc or Ly Tran.",
     "unique_non_merge_commits": 7538,
     "repositories": [
-      {"label": "Backend & services", "snapshot_tip_date": "2026-10-06", "commits": 3282},
-      {"label": "Web applications", "snapshot_tip_date": "2026-10-09", "commits": 2388},
-      {"label": "Legacy product", "snapshot_tip_date": "2026-09-14", "commits": 1868}
+      {
+        "label": "Backend & services",
+        "snapshot_tip_date": "2026-10-06",
+        "commits": 3282
+      },
+      {
+        "label": "Web applications",
+        "snapshot_tip_date": "2026-10-09",
+        "commits": 2388
+      },
+      {
+        "label": "Legacy product",
+        "snapshot_tip_date": "2026-09-14",
+        "commits": 1868
+      }
     ],
     "method": "Enumerate commits reachable from each pinned snapshot, exclude merges, and match author names exactly. Cross-check git log against git rev-list; combine commit SHA sets across repositories.",
     "limits": "A count of commit objects in the selected history, not distinct features, production releases, or all career work. Imported history, cherry-picks, and rebases can represent similar work under different SHAs. Squashed work may appear as one commit. No ranking of colleagues or productivity inference."
@@ -24,10 +38,83 @@
     "added": 356713,
     "deleted": 182770,
     "repositories": [
-      {"label": "Backend & services", "added": 153660, "deleted": 59219},
-      {"label": "Web applications", "added": 203053, "deleted": 123551}
+      {
+        "label": "Backend & services",
+        "added": 153660,
+        "deleted": 59219
+      },
+      {
+        "label": "Web applications",
+        "added": 203053,
+        "deleted": 123551
+      }
     ],
     "method": "Sum Git numstat with rename detection for .ts, .tsx, .mts and .cts files in the selected non-merge commits. Cross-check git log against a separate git diff-tree calculation using NUL-delimited paths. Exclude declaration files, known generated GraphQL bindings/introspection, shared generated types, dependency and build folders, fixtures, examples, migration files, and the country-code dataset.",
     "limits": "Diff line changes, not current source LOC or unique lines written by hand. Blank and comment lines count. Repeated edits, formatting, copied/imported work, and AI-assisted implementation can remain. Filtering is not a complete authorship audit. Added minus deleted is not personal ownership of the current codebase. No claim of a productivity or quality score."
+  },
+  "ai_periods": {
+    "collected": "2026-10-10",
+    "periods": [
+      {
+        "id": "before_2024",
+        "label": "Before 2024",
+        "ai_use_estimate_percent": null,
+        "months": 156,
+        "prs_opened": 1085,
+        "prs_merged": 840,
+        "others_prs_reviewed": 625,
+        "submitted_review_events": 948,
+        "product_commits": 6811,
+        "typescript_added": 262389,
+        "typescript_removed": 145395,
+        "prs_opened_per_month": 7.0
+      },
+      {
+        "id": "2024",
+        "label": "2024",
+        "ai_use_estimate_percent": 30,
+        "months": 12,
+        "prs_opened": 210,
+        "prs_merged": 143,
+        "others_prs_reviewed": 179,
+        "submitted_review_events": 259,
+        "product_commits": 354,
+        "typescript_added": 12429,
+        "typescript_removed": 8537,
+        "prs_opened_per_month": 17.5
+      },
+      {
+        "id": "2025",
+        "label": "2025",
+        "ai_use_estimate_percent": 50,
+        "months": 12,
+        "prs_opened": 429,
+        "prs_merged": 378,
+        "others_prs_reviewed": 110,
+        "submitted_review_events": 148,
+        "product_commits": 253,
+        "typescript_added": 46397,
+        "typescript_removed": 21150,
+        "prs_opened_per_month": 35.8
+      },
+      {
+        "id": "2026",
+        "label": "2026 to Oct 10",
+        "ai_use_estimate_percent": 90,
+        "months": 9.2754,
+        "prs_opened": 1146,
+        "prs_merged": 1129,
+        "others_prs_reviewed": 111,
+        "submitted_review_events": 141,
+        "product_commits": 120,
+        "typescript_added": 35498,
+        "typescript_removed": 7688,
+        "prs_opened_per_month": 123.6
+      }
+    ],
+    "estimate_basis": "AI-use percentages are Ly’s own estimates, stated on October 10, 2026. They are not measured percentages of AI-written lines, commits, or PRs. No estimate was given for the period before 2024.",
+    "method": "Calendar-year grouping in UTC. Opened PRs use creation date; merged PRs use merge date. Period PR counts were checked through REST and GraphQL search. Review counts use actual submitted review timestamps, paginating all matching PRs and review connections, with self-authored PRs and pending drafts excluded. The same PR can be reviewed in more than one period. Product commits and TypeScript diffs use Git author dates in the snapshots defined below.",
+    "monthly_rate": "Before 2024 means calendar years 2011–2023 (156 months). Full years use 12 months. The incomplete 2026 period uses elapsed time since January 1 at collection, divided by an average month of 365.25/12 days. The displayed rate is rounded to one decimal place.",
+    "limits": "Different period lengths, repository scope, languages, work mix, and team practices prevent interpreting this table as the effect of AI on productivity. PRs span product and internal-tool work; commits cover three product snapshots and TypeScript diffs cover two. The pre-2024 baseline is not a claim of zero AI use. Review-period counts overlap when a PR was reviewed in multiple periods."
   }
 }
